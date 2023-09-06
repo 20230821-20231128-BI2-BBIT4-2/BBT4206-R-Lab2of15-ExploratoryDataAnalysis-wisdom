@@ -13,7 +13,7 @@
 #       coursework marks.
 #
 # License: GNU GPL-3.0-or-later
-# See LICENSE file for licensing information.
+# See LICENSE file for licensing  information.
 # *****************************************************************************
 
 # STEP 1. Install and use renv ----
