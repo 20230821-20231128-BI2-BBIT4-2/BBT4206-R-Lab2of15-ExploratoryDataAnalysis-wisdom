@@ -22,7 +22,7 @@
 # projects. This is helpful when working in teams because it makes your R
 # projects more isolated, portable and reproducible.
 
-# Further reading:
+# Further reading :
 #   Summary: https://rstudio.github.io/renv/
 #   More detailed article: https://rstudio.github.io/renv/articles/renv.html
 
