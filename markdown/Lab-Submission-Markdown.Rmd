@@ -139,17 +139,30 @@ View(student_performance_dataset)
 Describe the next code chunk here:
 
 ```{r Your Third Code Chunk}
+
 # Fill this with other R related code that will be executed when the R markdown
 # file is rendered using knitR
 library(readr)
+# Knowing the data types will help you to identify the most appropriate
+# visualization types and algorithms that can be applied.
+sapply(student_performance_dataset,class)
+# Dimensions refer to the number of observations (rows) and the number of
+# attributes/variables/features (columns)
+dim(student_performance_dataset)
 ```
 
-## \<You Can Have a Sub-Title Here\>
+## \<Measuring the Kurtosis\>
 
 ```{r Your Fourth Code Chunk}
 # Fill this with other R related code that will be executed when the R markdown
 # file is rendered using knitR
 library(readr)
+if (!is.element("e1071", installed.packages()[, 1])) {
+  install.packages("e1071", dependencies = TRUE)
+}
+require("e1071")
+sapply(student_performance_dataset[, 4],  kurtosis, type = 2)
+
 ```
 
 **etc.** as per the lab submission requirements.
